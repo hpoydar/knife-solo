@@ -41,7 +41,7 @@ module KnifeSolo::Bootstraps
       run_command("sudo apt-get update")
 
       ui.msg "Installing required packages..."
-      @packages = %w(ruby ruby-dev libopenssl-ruby irb
+      @packages = %w(ruby ruby-dev libssl-dev irb
                      build-essential wget ssl-cert rsync)
       run_command <<-BASH
         sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install #{package_list}

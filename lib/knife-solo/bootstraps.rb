@@ -94,7 +94,7 @@ module KnifeSolo
 
       def gem_install
         ui.msg "Installing rubygems from source..."
-        release = "rubygems-1.8.10"
+        release = "rubygems-2.6.1"
         file = "#{release}.tgz"
         url = "http://production.cf.rubygems.org/rubygems/#{file}"
         http_client_get_url(url, file)
